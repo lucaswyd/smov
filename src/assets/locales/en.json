@@ -160,33 +160,13 @@
     "titles": {
       "day": {
         "default": "What would you like to watch this afternoon?",
-        "extra": ["Have you seen Blazing Saddles?"],
-        "extra": ["Welcome to Sudo-Flix!"],
-        "extra": [" /ᐠ>ヮ<ᐟ\\ฅ"],
-        "extra": ["Viva la sudo-flix!"]
       },
       "morning": {
         "default": "What would you like to watch this morning?",
-        "extra": ["Can't go wrong with Friends"],
-        "extra": ["I hear The Expanse is popular"],
-        "extra": ["\"૮₍  ˶•⤙•˶ ₎ა"],
-        "extra": ["Viva la sudo-flix!"]
       },
       "night": {
         "default": "What would you like to watch tonight?",
-        "extra": ["Rick & Morty is great with friends!"],
-        "extra": ["Go smoke and watch The Simpsons!"],
-        "extra": ["(づ ᴗ _ᴗ)づ♡"],
-        "extra": ["Viva la sudo-flix!"]
       },
-      "420": {
-        "default": "What would you like to watch this 4/20?",
-        "extra": ["Happy 4/20 🥳!"]
-      },
-      "69": {
-        "default": "Up for something spicy?",
-        "extra": ["Happy 69 day 😘!"]
-      }
     }
   },
   "media": {
