@@ -40,8 +40,8 @@ importers:
         specifier: ^0.7.2
         version: 0.7.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@movie-web/providers':
-        specifier: file:../../providers-dev 2
-        version: 2.4.0
+        specifier: github:sussy-code/providers
+        version: https://codeload.github.com/sussy-code/providers/tar.gz/b53ad8a399bd342e68c10501b45a6a1f635a5812
       '@noble/hashes':
         specifier: ^1.5.0
         version: 1.5.0
@@ -1205,8 +1205,9 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
-  '@movie-web/providers@2.4.0':
-    resolution: {integrity: sha512-C6OLPSADoWFuiiFnhFsBeTIOmn+hA4bMYsByU11kIt+yoJb3itE/2pnk6UfjW1YuByc1WrdyzmW8OZhZuMCCZw==}
+  '@movie-web/providers@https://codeload.github.com/sussy-code/providers/tar.gz/b53ad8a399bd342e68c10501b45a6a1f635a5812':
+    resolution: {tarball: https://codeload.github.com/sussy-code/providers/tar.gz/b53ad8a399bd342e68c10501b45a6a1f635a5812}
+    version: 2.3.0
 
   '@noble/hashes@1.5.0':
     resolution: {integrity: sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA==}
@@ -1562,10 +1563,6 @@ packages:
 
   '@xobotyi/scrollbar-width@1.9.5':
     resolution: {integrity: sha512-N8tkAACJx2ww8vFMneJmaAgmjAG1tnVBZJRLRcx061tmsLRZHSEZSLuGWnwPtunsSLvSqXQ2wfp7Mgqg1I+2dQ==}
-
-  abort-controller@3.0.0:
-    resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
-    engines: {node: '>=6.5'}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2253,10 +2250,6 @@ packages:
   esutils@2.0.3:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
-
-  event-target-shim@5.0.1:
-    resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
-    engines: {node: '>=6'}
 
   execa@8.0.1:
     resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
@@ -5309,15 +5302,15 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@movie-web/providers@2.4.0':
+  '@movie-web/providers@https://codeload.github.com/sussy-code/providers/tar.gz/b53ad8a399bd342e68c10501b45a6a1f635a5812':
     dependencies:
-      abort-controller: 3.0.0
       cheerio: 1.0.0-rc.12
       cookie: 0.6.0
       crypto-js: 4.2.0
       form-data: 4.0.1
       hls-parser: 0.13.5
       iso-639-1: 3.1.3
+      json5: 2.2.3
       nanoid: 3.3.8
       node-fetch: 3.3.2
       set-cookie-parser: 2.7.1
@@ -5428,7 +5421,7 @@ snapshots:
 
   '@rollup/pluginutils@5.1.1(@rollup/wasm-node@4.39.0)':
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.7
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
@@ -5737,10 +5730,6 @@ snapshots:
       pretty-format: 29.7.0
 
   '@xobotyi/scrollbar-width@1.9.5': {}
-
-  abort-controller@3.0.0:
-    dependencies:
-      event-target-shim: 5.0.1
 
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
@@ -6632,8 +6621,6 @@ snapshots:
       '@types/estree': 1.0.6
 
   esutils@2.0.3: {}
-
-  event-target-shim@5.0.1: {}
 
   execa@8.0.1:
     dependencies:
