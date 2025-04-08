@@ -359,7 +359,7 @@ export function Discover() {
                   navigate(
                     `/media/tmdb-${isTVShow ? "tv" : "movie"}-${media.id}-${
                       isTVShow ? media.name : media.title
-                    }`,
+                    }/details`,
                   )
                 }
                 className="text-center relative mt-3 mx-[0.285em] mb-3 transition-transform hover:scale-105 duration-[0.45s]"
@@ -449,7 +449,7 @@ export function Discover() {
         // Schedule navigation after 5 seconds
         const timeoutId = setTimeout(() => {
           navigate(
-            `/media/tmdb-movie-${selectedMovie.id}-${selectedMovie.title}`,
+            `/media/tmdb-movie-${selectedMovie.id}-${selectedMovie.title}/details`,
           );
         }, 5000);
         setCountdownTimeout(timeoutId);

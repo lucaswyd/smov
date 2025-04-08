@@ -1,28 +1,25 @@
 import { ReactNode } from "react";
-
 import { Icon, Icons } from "@/components/Icon";
 
 interface SectionHeadingProps {
   icon?: Icons;
-  title: string;
   children?: ReactNode;
   className?: string;
 }
 
-export function SectionHeading(props: SectionHeadingProps) {
+export function SectionHeading({ icon, children, className }: SectionHeadingProps) {
   return (
-    <div className={props.className}>
-      <div className="mb-5 flex items-center">
-        <p className="flex flex-1 items-center font-bold uppercase text-type-text">
-          {props.icon ? (
-            <span className="mr-2 text-xl">
-              <Icon icon={props.icon} />
-            </span>
-          ) : null}
-          {props.title}
-        </p>
-        {props.children}
-      </div>
+    <div className={className}>
+      <h2 className="text-2xl cursor-default font-bold text-white sm:text-3xl md:text-2xl mx-auto pl-5">
+        {icon ? (
+          <span className="inline-flex items-center gap-2">
+            <Icon icon={icon} className="text-xl text-gray-400" />
+            {children}
+          </span>
+        ) : (
+          children
+        )}
+      </h2>
     </div>
   );
 }

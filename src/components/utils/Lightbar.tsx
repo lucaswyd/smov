@@ -156,11 +156,11 @@ function ParticlesCanvas() {
       case (month === 11 && day >= 24 && day <= 26) || Math.random() < 0.051:
         imageOverride = [
           {
-            image: "/lightbar-images/snowflake.svg",
+            image: "/lightbar-images/star.png",
             sizeRange: [12, 20] as [number, number],
           },
           {
-            image: "/lightbar-images/santa.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [25, 35] as [number, number],
           },
         ];
@@ -170,11 +170,11 @@ function ParticlesCanvas() {
       case (month === 9 && day >= 29 && day <= 31) || Math.random() < 0.05:
         imageOverride = [
           {
-            image: "/lightbar-images/ghost.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [20, 33] as [number, number],
           },
           {
-            image: "/lightbar-images/pumpkin.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [25, 35] as [number, number],
           },
         ];
@@ -184,11 +184,11 @@ function ParticlesCanvas() {
       case Math.random() < 0.1:
         imageOverride = [
           {
-            image: "/lightbar-images/fishie.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [10, 13] as [number, number],
           },
           {
-            image: "/lightbar-images/shark.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [48, 56] as [number, number],
           },
         ];
@@ -198,7 +198,7 @@ function ParticlesCanvas() {
       case month + 1 === 4 && day === 20:
         imageOverride = [
           {
-            image: "/lightbar-images/weed.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [32, 40] as [number, number],
           },
         ];
@@ -208,11 +208,11 @@ function ParticlesCanvas() {
       case month + 1 === 6 && day === 9:
         imageOverride = [
           {
-            image: "/lightbar-images/heart.svg",
+            image: "/lightbar-images/star.png",
             sizeRange: [32, 14] as [number, number],
           },
           {
-            image: "/lightbar-images/wine.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [15, 35] as [number, number],
           },
         ];
@@ -222,7 +222,7 @@ function ParticlesCanvas() {
       case Math.random() < 0.2:
         imageOverride = [
           {
-            image: "/lightbar-images/cat.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [30, 38] as [number, number],
           },
         ];
@@ -232,11 +232,11 @@ function ParticlesCanvas() {
       case Math.random() < 0.3:
         imageOverride = [
           {
-            image: "/lightbar-images/camera.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [24, 32] as [number, number],
           },
           {
-            image: "/lightbar-images/popcorn.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [18, 27] as [number, number],
           },
         ];
@@ -246,15 +246,15 @@ function ParticlesCanvas() {
       case Math.random() < 0.08:
         imageOverride = [
           {
-            image: "/lightbar-images/cock.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [25, 32] as [number, number],
           },
           {
-            image: "/lightbar-images/egg.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [18, 24] as [number, number],
           },
           {
-            image: "/lightbar-images/barn.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [32, 38] as [number, number],
           },
         ];
@@ -264,15 +264,15 @@ function ParticlesCanvas() {
       case Math.random() < 0.06:
         imageOverride = [
           {
-            image: "/lightbar-images/money-sack.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [24, 32] as [number, number],
           },
           {
-            image: "/lightbar-images/money.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [13, 23] as [number, number],
           },
           {
-            image: "/lightbar-images/coin.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [8, 20] as [number, number],
           },
         ];
@@ -282,11 +282,11 @@ function ParticlesCanvas() {
       case Math.random() < 0.075:
         imageOverride = [
           {
-            image: "/lightbar-images/skull.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [20, 28] as [number, number],
           },
           {
-            image: "/lightbar-images/ship.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [23, 27] as [number, number],
           },
         ];
@@ -296,11 +296,11 @@ function ParticlesCanvas() {
       case Math.random() < 0.03:
         imageOverride = [
           {
-            image: "/lightbar-images/ts.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [20, 32] as [number, number],
           },
           {
-            image: "/lightbar-images/git.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [20, 28] as [number, number],
           },
         ];
@@ -310,23 +310,23 @@ function ParticlesCanvas() {
       case Math.random() < 0.7:
         imageOverride = [
           {
-            image: "/lightbar-images/beer.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [15, 35] as [number, number],
           },
           {
-            image: "/lightbar-images/beer-bottle.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [10, 38] as [number, number],
           },
           {
-            image: "/lightbar-images/wine.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [15, 35] as [number, number],
           },
           {
-            image: "/lightbar-images/cigarette.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [10, 38] as [number, number],
           },
           {
-            image: "/lightbar-images/cigarette2.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [15, 35] as [number, number],
           },
         ];
@@ -336,11 +336,11 @@ function ParticlesCanvas() {
       case Math.random() < 0.05:
         imageOverride = [
           {
-            image: "/lightbar-images/auto-gun.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [28, 36] as [number, number],
           },
           {
-            image: "/lightbar-images/gun.png",
+            image: "/lightbar-images/star.png",
             sizeRange: [23, 30] as [number, number],
           },
         ];

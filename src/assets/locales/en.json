@@ -101,7 +101,7 @@
     "tagline": "Watch your favorite shows and movies for free with no ads ever! (っ'ヮ'c)"
   },
   "global": {
-    "name": "sudo-flix",
+    "name": "xFlix",
     "pages": {
       "about": "About",
       "dmca": "DMCA",
@@ -120,7 +120,7 @@
       "sectionTitle": "Bookmarks"
     },
     "continueWatching": {
-      "sectionTitle": "Continue Watching..."
+      "sectionTitle": "Continue Watching"
     },
     "mediaList": {
       "stopEditing": "Stop editing"
@@ -131,27 +131,10 @@
       "loading": "Loading...",
       "noResults": "We couldn't find anything :(",
       "placeholder": {
-        "default": "What do you want to watch?",
-        "extra": [
-          "What are you in the mood for?",
-          "Should we delete your browser history?",
-          "What do you want to stream?",
-          "Sudo-Flix is the best site ever!",
-          "What's on your watchlist today?",
-          "How was your day?",
-          "My bad the site never works...",
-          "Isn't sudo-flix just the best?",
-          ">ᴗ<"
-        ]
+        "default": "What are you in the mood for?"
       },
       "empty": {
-        "default": "Welcome, find media to watch here!",
-        "extra": [
-          "There's nothing here :(",
-          "So empty...",
-          "Such emptiness.",
-          "Hi new user :3"
-        ]
+        "default": "There's nothing in your watchlist yet!"
       },
       "sectionTitle": "Search results",
       "discoverMore": "Discover more",
@@ -159,14 +142,14 @@
     },
     "titles": {
       "day": {
-        "default": "What would you like to watch this afternoon?",
+        "default": "What would you like to watch this afternoon?"
       },
       "morning": {
-        "default": "What would you like to watch this morning?",
+        "default": "What would you like to watch this morning?"
       },
       "night": {
-        "default": "What would you like to watch tonight?",
-      },
+        "default": "What would you like to watch tonight?"
+      }
     }
   },
   "media": {

@@ -5,7 +5,7 @@ import { NoUserAvatar, UserAvatar } from "@/components/Avatar";
 import { IconPatch } from "@/components/buttons/IconPatch";
 import { Icons } from "@/components/Icon";
 import { LinksDropdown } from "@/components/LinksDropdown";
-import { Lightbar } from "@/components/utils/Lightbar";
+//import { Lightbar } from "@/components/utils/Lightbar";
 import { useAuth } from "@/hooks/auth/useAuth";
 import { BlurEllipsis } from "@/pages/layouts/SubPageLayout";
 import { conf } from "@/setup/config";
@@ -32,7 +32,7 @@ export function Navigation(props: NavigationProps) {
   return (
     <>
       {/* lightbar */}
-      {!props.noLightbar ? (
+      {/* {!props.noLightbar ? (
         <div
           className="absolute inset-x-0 top-0 flex h-[88px] items-center justify-center"
           style={{
@@ -43,7 +43,7 @@ export function Navigation(props: NavigationProps) {
             <Lightbar />
           </div>
         </div>
-      ) : null}
+      ) : null} */}
 
       {/* backgrounds - these are seperate because of z-index issues */}
       <div
@@ -71,7 +71,10 @@ export function Navigation(props: NavigationProps) {
               props.bg ? "opacity-100" : "opacity-0"
             } absolute inset-0 block h-24 bg-background-main transition-opacity duration-300`}
           >
-            <div className="absolute -bottom-24 h-24 w-full bg-gradient-to-b from-background-main to-transparent" />
+            {/* Temporarily commented out top gradient */}
+            {/* <div className="absolute -bottom-24 h-24 w-full bg-gradient-to-b from-background-main to-transparent" /> */}
+            {/* Bottom gradient */}
+            <div className="absolute bottom-0 h-16 w-full bg-gradient-to-t from-background-main to-transparent" />
           </div>
         </div>
       </div>

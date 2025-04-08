@@ -7,6 +7,7 @@ import { Icon, Icons } from "@/components/Icon";
 export interface EditButtonProps {
   editing: boolean;
   onEdit?: (editing: boolean) => void;
+  className?: string;
 }
 
 export function EditButton(props: EditButtonProps) {
@@ -21,7 +22,7 @@ export function EditButton(props: EditButtonProps) {
     <button
       type="button"
       onClick={onClick}
-      className="flex h-12 items-center overflow-hidden rounded-full bg-background-secondary px-4 py-2 text-white transition-[background-color,transform] hover:bg-background-secondaryHover active:scale-105"
+      className={`flex h-12 items-center overflow-hidden rounded-full bg-background-secondary px-4 py-2 text-white transition-[background-color,transform] hover:bg-background-secondaryHover active:scale-105 ${props.className}`}
     >
       <span ref={parent}>
         {props.editing ? (

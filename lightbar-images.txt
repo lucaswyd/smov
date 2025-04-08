@@ -1,0 +1,62 @@
+# Original files (commented out)
+# weed.png
+# wine.png
+# santa.png
+# shark.png
+# ship.png
+# skull.png
+# snowflake.svg
+# ts.png
+# turkey.png
+# egg.png
+# fishie.png
+# ghost.png
+# git.png
+# gun.png
+# heart.svg
+# money-sack.png
+# money.png
+# popcorn.png
+# pumpkin.png
+# auto-gun.png
+# barn.png
+# beer-bottle.png
+# beer.png
+# camera.png
+# cat.png
+# cigarette.png
+# cigarette2.png
+# cock.png
+# coin.png
+# dice.svg
+
+# All files replaced with star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png
+star.png 

@@ -1,4 +1,5 @@
 import { ReactElement, Suspense, lazy, useEffect, useState } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { lazyWithPreload } from "react-lazy-with-preload";
 import {
   Navigate,
@@ -22,11 +23,13 @@ import { NotFoundPage } from "@/pages/errors/NotFoundPage";
 import { HomePage } from "@/pages/HomePage";
 import { JipPage } from "@/pages/Jip";
 import { LoginPage } from "@/pages/Login";
+import { MediaDetailsPage } from "@/pages/MediaDetailsPage";
 import { OnboardingPage } from "@/pages/onboarding/Onboarding";
 import { OnboardingExtensionPage } from "@/pages/onboarding/OnboardingExtension";
 import { OnboardingProxyPage } from "@/pages/onboarding/OnboardingProxy";
 import { RegisterPage } from "@/pages/Register";
 import { SupportPage } from "@/pages/Support";
+import { Netflix } from "@/pages/Netflix";
 import { Layout } from "@/setup/Layout";
 import { useHistoryListener } from "@/stores/history";
 import { LanguageProvider } from "@/stores/language";
@@ -116,6 +119,16 @@ function App() {
           <Route path="/search/:type/:query?" element={<QueryView />} />
           {/* pages */}
           <Route
+            path="/media/:media/details"
+            element={
+              <LegacyUrlView>
+                <Suspense fallback={null}>
+                  <MediaDetailsPage />
+                </Suspense>
+              </LegacyUrlView>
+            }
+          />
+          <Route
             path="/media/:media"
             element={
               <LegacyUrlView>
@@ -172,6 +185,7 @@ function App() {
           {process.env.NODE_ENV === "development" ? (
             <Route path="/dev/test" element={<TestView />} />
           ) : null}
+          <Route path="/netflix" element={<Netflix />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       )}

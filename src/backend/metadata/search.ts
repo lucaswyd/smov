@@ -24,12 +24,42 @@ export async function searchForMedia(query: MWQuery): Promise<MediaItem[]> {
     return formatTMDBMetaToMediaItem(formattedResult);
   });
 
-  const movieWithPosters = results.filter((movie) => movie.poster);
-  const movieWithoutPosters = results.filter((movie) => !movie.poster);
+  // Sort results by relevance and popularity
+  const sortedResults = results.sort((a, b) => {
+    // First, check if the title starts with the search query (highest priority)
+    const aStartsWith = a.title
+      .toLowerCase()
+      .startsWith(searchQuery.toLowerCase());
+    const bStartsWith = b.title
+      .toLowerCase()
+      .startsWith(searchQuery.toLowerCase());
+    if (aStartsWith && !bStartsWith) return -1;
+    if (!aStartsWith && bStartsWith) return 1;
 
-  const sortedresult = movieWithPosters.concat(movieWithoutPosters);
+    // Then, check if the title contains the search query
+    const aContains = a.title.toLowerCase().includes(searchQuery.toLowerCase());
+    const bContains = b.title.toLowerCase().includes(searchQuery.toLowerCase());
+    if (aContains && !bContains) return -1;
+    if (!aContains && bContains) return 1;
+
+    // Then sort by popularity (from TMDB data)
+    const aPopularity =
+      (data.find((d) => d.id.toString() === a.id.toString()) as any)
+        ?.popularity || 0;
+    const bPopularity =
+      (data.find((d) => d.id.toString() === b.id.toString()) as any)
+        ?.popularity || 0;
+    if (aPopularity > bPopularity) return -1;
+    if (aPopularity < bPopularity) return 1;
+
+    // Finally, sort by whether they have posters
+    if (a.poster && !b.poster) return -1;
+    if (!a.poster && b.poster) return 1;
+
+    return 0;
+  });
 
   // cache results for 1 hour
-  cache.set(query, sortedresult, 3600);
-  return sortedresult;
+  cache.set(query, sortedResults, 3600);
+  return sortedResults;
 }

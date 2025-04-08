@@ -196,7 +196,7 @@ export function MediaCard(props: MediaCardProps) {
   const canLink = props.linkable && !props.closable && isReleased();
 
   let link = canLink
-    ? `/media/${encodeURIComponent(mediaItemToId(props.media))}`
+    ? `/media/${encodeURIComponent(mediaItemToId(props.media))}/details`
     : "#";
   if (canLink && props.series) {
     if (props.series.season === 0 && !props.series.episodeId) {
